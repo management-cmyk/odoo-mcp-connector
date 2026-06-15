@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.json",
+  "name": "io.github.management-cmyk/odoo-mcp-connector",
+  "description": "Connect Claude to any Odoo ERP — query, report on, and optionally modify your data. Read-only by default.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/management-cmyk/odoo-mcp-connector",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "odoo-mcp-connector",
+      "version": "0.1.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        { "name": "ODOO_URL", "description": "Odoo base URL, e.g. https://your-company.odoo.com", "isRequired": true },
+        { "name": "ODOO_DB", "description": "Odoo database name", "isRequired": true },
+        { "name": "ODOO_USERNAME", "description": "Odoo login (email)", "isRequired": true },
+        { "name": "ODOO_API_KEY", "description": "Odoo API key (or password)", "isRequired": true, "isSecret": true },
+        { "name": "ODOO_ENABLE_WRITES", "description": "Set to 'true' to allow create/update/delete. Default false (read-only).", "isRequired": false },
+        { "name": "ODOO_TIMEOUT_MS", "description": "Per-request timeout in milliseconds (default 30000).", "isRequired": false }
+      ]
+    }
+  ]
+}

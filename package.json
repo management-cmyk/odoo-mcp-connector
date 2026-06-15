@@ -1,0 +1,50 @@
+{
+  "name": "odoo-mcp-connector",
+  "version": "0.1.0",
+  "mcpName": "io.github.management-cmyk/odoo-mcp-connector",
+  "description": "Model Context Protocol server for Odoo ERP — query and (optionally) modify any Odoo instance from Claude.",
+  "type": "module",
+  "bin": {
+    "odoo-mcp-connector": "dist/server.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "odoo",
+    "erp",
+    "claude"
+  ],
+  "author": "Falak Sarhan Saade",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/management-cmyk/odoo-mcp-connector.git"
+  },
+  "homepage": "https://github.com/management-cmyk/odoo-mcp-connector#readme",
+  "bugs": {
+    "url": "https://github.com/management-cmyk/odoo-mcp-connector/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "_comment": "Example MCP client config for the Odoo MCP server. Copy the 'odoo' block into your client's config and fill in your own values. The API key stays on your machine.",
+  "mcpServers": {
+    "odoo": {
+      "command": "node",
+      "args": ["/absolute/path/to/odoo-mcp-connector/dist/server.js"],
+      "env": {
+        "ODOO_URL": "https://your-company.odoo.com",
+        "ODOO_DB": "your-database",
+        "ODOO_USERNAME": "you@example.com",
+        "ODOO_API_KEY": "your-odoo-api-key",
+        "ODOO_ENABLE_WRITES": "false"
+      }
+    }
+  }
+}
