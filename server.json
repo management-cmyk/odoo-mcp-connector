@@ -1,5 +1,5 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.management-cmyk/odoo-mcp-connector",
   "description": "Query, report on, and optionally modify any Odoo ERP from Claude. Read-only by default.",
   "version": "0.1.0",
